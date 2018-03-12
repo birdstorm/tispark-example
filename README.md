@@ -25,6 +25,10 @@ airflow initdb
 
 # start the web server, default port is 8080
 airflow webserver -p 8080
+
+# example to run tispark-test dag
+# you can check its status in webserver 0.0.0.0:8080
+airflow backfill tispark-test -s 2018-03-11 -e 2018-03-11T03:00
 ```
 
 此项目仅为示例，可以按自己业务需求来写特定的tispark job
